@@ -19,6 +19,7 @@ function Hero() {
 
   return (
     <section className="hero fade-in d1">
+      <img className="avatar" src="/avatar.jpg" alt={profile.name} width="96" height="96" loading="eager" decoding="async" />
       <h1>{profile.name}</h1>
       <div className="headline">{profile.headline}</div>
       <div className="company">@ {profile.company}</div>
