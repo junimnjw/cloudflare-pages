@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Cloudflare Pages Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Hello, Cloudflare Pages 👋</h1>
+    <p>이 페이지는 GitHub에 push할 때마다 자동으로 다시 배포됩니다.</p>
+    <p class="hint">아래 버튼을 누르면 현재 시각이 표시됩니다.</p>
+    <button id="now-btn" type="button">현재 시각 표시</button>
+    <p id="now-output" aria-live="polite"></p>
+  </main>
+  <script>
+    document.getElementById('now-btn').addEventListener('click', () => {
+      const now = new Date().toLocaleString('ko-KR');
+      document.getElementById('now-output').textContent = now;
+    });
+  </script>
+</body>
+</html>
