@@ -1,5 +1,8 @@
 .DS_Store
 *.log
+*.tsbuildinfo
 .idea/
 .vscode/
 node_modules/
+dist/
+.wrangler/
